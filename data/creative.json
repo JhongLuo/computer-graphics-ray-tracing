@@ -1,0 +1,65 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 2.8,
+    "eye": [9.6,0.3,10],
+    "up": [-0.7071067812,0,0.7071067812],
+    "look": [-0.7071067812,0,-0.7071067812],
+    "height": 1,
+    "width": 1.7777777778
+  },
+  "materials": [
+      {
+      "name": "gray mirror",
+      "ka": [0.1,0.1,0.1],
+      "kd": [0.1,0.1,0.1],
+      "ks": [0.1,0.1,0.1],
+      "km": [0.999,0.999,0.999],
+      "phong_exponent": 1000
+    }
+  ],
+  "lights":[
+    {
+      "type": "point",
+      "position": [0.3,9,15],
+      "color": [0.7,0.7,0.7]
+    },
+    {
+      "type": "point",
+      "position": [9,-0.3,15],
+      "color": [0.7,0.7,0.7]
+    }
+  ],
+  "objects": [
+    {
+      "type": "plane",
+      "material": "gray mirror",
+      "point": [0,0,-1],
+      "normal": [0,0,1]
+    },
+    {
+      "type": "sphere",
+      "material": "gray mirror",
+      "radius": 1,
+      "center": [0,0,1]
+    },
+    {
+      "type": "sphere",
+      "material": "gray mirror",
+      "radius": 1,
+      "center": [2,0,1]
+    },
+    {
+      "type": "sphere",
+      "material": "gray mirror",
+      "radius": 1,
+      "center": [1,1.7321,1]
+    },
+    {
+      "type": "sphere",
+      "material": "gray mirror",
+      "radius": 1,
+      "center": [1,0.57735,2.633]
+    }
+  ]
+}

@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
 	std::vector< std::shared_ptr<Light> > lights;
 	// Read a camera and scene description from given .json file
 	read_json(
-		argc <= 1 ? "./data/sphere-and-plane.json" : argv[1],
+		argc <= 1 ? "./data/sphere-packing.json" : argv[1],
 		camera,
 		objects,
 		lights);
@@ -31,6 +31,7 @@ int main(int argc, char* argv[])
 	// For each pixel (i,j)
 	for (unsigned i = 0; i < height; ++i)
 	{
+		printf("%d\n", i);
 		for (unsigned j = 0; j < width; ++j)
 		{
 			// Set background color
